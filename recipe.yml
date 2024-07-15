@@ -6,7 +6,7 @@ stages:
   base: ghcr.io/vanilla-os/core:main
   singlelayer: false
   labels:
-    maintainer: Kattleya Contributors
+    maintainer: Kanola Contributors
   args:
     DEBIAN_FRONTEND: noninteractive
   runs:
