@@ -1,5 +1,5 @@
 name: Kanola Base
-id: kanola-base
+id: base
 
 stages:
 - id: build
