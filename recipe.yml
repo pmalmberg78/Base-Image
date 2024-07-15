@@ -1,5 +1,5 @@
-name: Kattleya Plasma Desktop
-id: kattleya-plasma
+name: Kanola Base
+id: kanola-base
 
 stages:
 - id: build

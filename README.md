@@ -1,4 +1,4 @@
-# Kattleya Plasma Image
+# Kanola Base Image
 
 Containerfile for building Kanola-Base, an unofficial Vanilla OS image.
 
@@ -10,13 +10,13 @@ It is intended as an intermediary between upstream core and the downstream image
 > [!CAUTION]
 > This WIP image is experimental and isn't suitable for production. If you encounter any bugs during testing, please report them in this repository.
 
-- Edit the `/etc/abroot/abroot.json` file with the `host-shell pkexec nano /etc/abroot/abroot.json` command.
-- Change the "name" entry from something like `vanilla-os/desktop` to `vanilla-kattleya/plasma` (**Note**: All characters must be in lowercase).
+- Edit the `/etc/abroot/abroot.json` file with the `abroot config-editor` command.
+- Change the "name" entry from something like `vanilla-os/desktop` to `Kanola-Images/Base-Image` (**Note**: All characters must be in lowercase).
 - Now, Run `abroot upgrade` to switch to your custom image.
 
 ## Build
 
 ```bash
 vib build recipe.yml
-podman image build -t kattleya/plasma .
+podman image build -t Kanola-Images/Base-Image .
 ```
