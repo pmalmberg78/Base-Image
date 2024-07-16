@@ -4,7 +4,7 @@
   "registry": "ghcr.io",
   "registryService": "registry.ghcr.io",
   "registryAPIVersion": "v2",
-  "name": "Kanola-Images/Base-Image",
+  "name": "Kanola-Images/base",
   "tag": "main",
   "iPkgMngPre": "lpkg --unlock",
   "iPkgMngPost": "lpkg --lock",
