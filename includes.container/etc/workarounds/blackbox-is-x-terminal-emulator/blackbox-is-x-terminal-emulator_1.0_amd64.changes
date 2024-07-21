@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Sun, 21 Jul 2024 09:49:08 -0300
+Source: blackbox-is-x-terminal-emulator
+Binary: blackbox-is-x-terminal-emulator
+Built-For-Profiles: noudeb
+Architecture: all
+Version: 1.0
+Distribution: unstable
+Urgency: low
+Maintainer: Max MacNeill <maxmacneill1+Kanola@gmail.com>
+Changed-By: Max MacNeill <maxmacneill1+Kanola@gmail.com>
+Description:
+ blackbox-is-x-terminal-emulator - Calls in blackbox-terminal then satisifies x-terminal-emulator fo
+Changes:
+ blackbox-is-x-terminal-emulator (1.0) unstable; urgency=low
+ .
+   * First version
+Checksums-Sha1:
+ 9326ba5d0db8c2a298ac2978093d854894ceef45 2080 blackbox-is-x-terminal-emulator_1.0_all.deb
+ a48da5beb12d4664d96cfd83eff1ca11679ea5a3 6081 blackbox-is-x-terminal-emulator_1.0_amd64.buildinfo
+Checksums-Sha256:
+ 23c10632baf4c0f0c06b69dff82be1e4aa46037bf9b45502eaa6095dcb77433a 2080 blackbox-is-x-terminal-emulator_1.0_all.deb
+ 5bc7c521012ce110075fca617343fe58158c79be03c2737688bcd1caf6fff1a0 6081 blackbox-is-x-terminal-emulator_1.0_amd64.buildinfo
+Files:
+ 870401a3de09dd2d6859e243f7a3ee1a 2080 misc optional blackbox-is-x-terminal-emulator_1.0_all.deb
+ eb8cbd19d7bcf2bfd15e0645900d255e 6081 misc optional blackbox-is-x-terminal-emulator_1.0_amd64.buildinfo
