@@ -52,6 +52,8 @@ stages:
       - modules/01-workarounds.yml
       - modules/02-waydroid-modules.yml
       - modules/03-fswarn.yml
+      - modules/04-clipboard-sync-repo.yml
+      - modules/05-clipboards.yml
       - modules/10-vanilla-abroot-rollback-notifier.yml
       - modules/35-vanilla-apps.yml
       - modules/50-laptop-goodies.yml
