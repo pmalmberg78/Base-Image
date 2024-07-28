@@ -3,8 +3,7 @@ type: dpkg-buildpackage
 source:
   type: git
   url: https://github.com/Vanilla-OS/first-setup.git
-  branch: main
-  commit: latest
+  tag: v2.2.1
   paths:
   - vanilla-first-setup
 modules:
@@ -12,13 +11,13 @@ modules:
   type: apt
   source:
     packages:
-    - accountsservice
     - build-essential
     - debhelper
     - desktop-file-utils
     - dpkg-dev
     - gettext
     - gir1.2-nma4-1.0
+    - gir1.2-vte-3.91
     - libadwaita-1-dev
     - libjpeg-dev
     - libnm0
