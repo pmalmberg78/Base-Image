@@ -2,6 +2,7 @@ name: fonts
 type: apt
 source:
   packages:
+  - fonts-cantarell
   - fonts-dejavu-core
   - fonts-freefont-ttf
   - fonts-indic
@@ -15,4 +16,3 @@ source:
   - fonts-sil-padauk
   - fonts-thai-tlwg
   - fonts-tibetan-machine
-  - fonts-hack

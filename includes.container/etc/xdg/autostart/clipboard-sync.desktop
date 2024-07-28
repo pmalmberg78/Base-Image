@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=Wayland/X Clipboard Sync
+Exec=systemctl --user start clipboard-sync
+Type=Application

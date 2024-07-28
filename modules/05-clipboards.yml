@@ -1,0 +1,7 @@
+name: clipboard
+type: apt
+source:
+  packages:
+  - xclip
+  - wl-clipboard
+  - clipboard-sync
