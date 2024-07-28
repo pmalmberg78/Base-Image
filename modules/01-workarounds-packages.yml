@@ -1,4 +1,5 @@
 name: install workaround packages
 type: apt
 commands:
-- accountsservice
+  packages:
+  - accountsservice
