@@ -85,11 +85,6 @@ stages:
     - mkdir -p /etc/systemd/user/graphical-session.target.wants/
     - ln -s /etc/systemd/user/apx-vso-pico.service /etc/systemd/user/graphical-session.target.wants/
 
-  - name: gnome-software-cleanup
-    type: shell
-    commands:
-    - rm /usr/lib/*/gnome-software/plugins-20/libgs_plugin_packagekit.so
-
   - name: cleanup
     type: shell
     commands:
