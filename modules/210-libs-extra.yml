@@ -1,4 +1,4 @@
-name: gnome-common
+name: desktop-common
 type: apt
 source:
   packages:
@@ -14,7 +14,5 @@ source:
   - libjxl-gdk-pixbuf
   - libglib2.0-bin
   - libblockdev-crypto3
-  - libpam-gnome-keyring
   - libproxy1-plugin-gsettings
   - libwmf0.2-7-gtk
-  - gnome-epub-thumbnailer
