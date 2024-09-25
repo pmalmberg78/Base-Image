@@ -11,6 +11,7 @@ modules:
   type: apt
   source:
     packages:
+    - adwaita-icon-theme
     - build-essential
     - debhelper
     - desktop-file-utils
@@ -20,16 +21,16 @@ modules:
     - gir1.2-vte-3.91
     - gnome-backgrounds
     - libadwaita-1-dev
-    - libjpeg-dev
     - libgnome-desktop-4-dev
     - libgweather-4-dev
-    - libnm0
+    - libjpeg-dev
     - libnm-dev
-    - libnma0
+    - libnm0
     - libnma-gtk4-0
     - libnma-gtk4-dev
+    - libnma0
     - make
     - meson
     - python3
-    - python3-tz
     - python3-requests
+    - python3-tz
