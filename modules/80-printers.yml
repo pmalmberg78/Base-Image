@@ -9,7 +9,6 @@ source:
 
   - printer-driver-brlaser  # Brother
   - printer-driver-escpr    # Epson
-  - hplip                   # HP
 
   # Config
   - system-config-printer-common
