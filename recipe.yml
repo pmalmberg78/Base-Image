@@ -52,6 +52,7 @@ stages:
       - modules/00-vanilla-prime-utility.yml
       - modules/01-workarounds-packages.yml
       - modules/01-workarounds.yml
+      - modules/01-kernel-version-file.yml
       - modules/02-waydroid-modules.yml
       - modules/03-fswarn.yml
       - modules/04-clipboard-sync-repo.yml
