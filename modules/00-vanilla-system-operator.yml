@@ -2,8 +2,8 @@ name: vso
 type: shell
 source:
   type: tar
-  url: https://github.com/Vanilla-OS/vanilla-system-operator/releases/download/v2.0.3/vso.tar.gz
-  checksum: 63673c9f76e41b17623c2b5676dc80c8125512d381ac0ef9a45b9b5aa0bc4b69
+  url: https://github.com/Vanilla-OS/vanilla-system-operator/releases/download/v2.0.5/vso.tar.gz
+  checksum: 04799ddcccb83c2042524f897c0d49d176af9c89a2619061f2f0e6e0e47d7e93
 commands:
 - mkdir -p /usr/bin
 - cp /sources/vso/vso /usr/bin/vso
@@ -13,8 +13,8 @@ modules:
   type: shell
   source:
     type: tar
-    url: https://github.com/Vanilla-OS/vanilla-system-operator/releases/download/v2.0.3/vso-man.tar.gz
-    checksum: d38b5930ccae7880e9d195c709cf9480690a42900b3d2e7c603b1efb3cf3beea
+    url: https://github.com/Vanilla-OS/vanilla-system-operator/releases/download/v2.0.5/vso-man.tar.gz
+    checksum: 192c79a83fe24d329379d4961955b895393b23636473fcb2326bbcf6b7638ef4
   commands:
   - mv /sources/vso-manpage/man/vso.1 /usr/share/man/man1/
 
@@ -39,10 +39,10 @@ modules:
   type: shell
   source:
     type: tar
-    url: https://github.com/Vanilla-OS/vso-gnome-ext/archive/refs/tags/1.2.tar.gz
+    url: https://github.com/Vanilla-OS/vso-gnome-ext/archive/refs/tags/1.3.tar.gz
   commands:
   - mkdir -p /usr/share/gnome-shell/extensions/
-  - mv /sources/vso-gnome-ext/vso-gnome-ext-1.2/vso\@vanillaos.org /usr/share/gnome-shell/extensions/vso\@vanillaos.org
+  - mv /sources/vso-gnome-ext/vso-gnome-ext-1.3/vso\@vanillaos.org /usr/share/gnome-shell/extensions/vso\@vanillaos.org
 
 - name: vso-deps-install
   type: apt
@@ -82,4 +82,5 @@ modules:
   - ln -s /usr/lib/systemd/system/vanilla-updates.timer /etc/systemd/system/timers.target.wants/vanilla-updates.timer
   - mkdir -p /usr/lib/systemd/user/default.target.wants
   - ln -s /usr/lib/systemd/user/vso-pre-run.service /usr/lib/systemd/user/default.target.wants/vso-pre-run.service
+  - ln -s /usr/lib/systemd/user/vso-migrate-repo.service /usr/lib/systemd/user/default.target.wants/vso-migrate-repo.service
   - ln -s /usr/lib/systemd/user/vso-tasks-rotation.service /usr/lib/systemd/user/default.target.wants/vso-tasks-rotation.service

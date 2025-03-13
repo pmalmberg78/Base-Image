@@ -46,7 +46,6 @@ stages:
       - modules/00-vanilla-first-setup.yml
       - modules/00-vanilla-system-operator.yml
       - modules/00-vanilla-apx-gui.yml
-      - modules/00-vanilla-tour.yml
       - modules/00-vanilla-sideload.yml
       - modules/00-vanilla-updates-utility.yml
       - modules/00-vanilla-prime-utility.yml
@@ -55,8 +54,6 @@ stages:
       - modules/01-kernel-version-file.yml
       - modules/02-waydroid-modules.yml
       - modules/03-fswarn.yml
-      - modules/04-clipboard-sync-repo.yml
-      - modules/05-clipboards.yml
       - modules/10-vanilla-abroot-rollback-notifier.yml
       - modules/35-vanilla-apps.yml
       - modules/50-laptop-goodies.yml
@@ -75,12 +72,6 @@ stages:
       - modules/998-vanilla-cleanup.yml
       - modules/999-pkg-cleanup.yml
       - modules/999-clear-first-setup-steps-unit.yml
-
-  - name: firstsetup-default-session
-    type: shell
-    commands:
-    - sed 's/Session=/Session=firstsetup/g' -i /usr/share/accountsservice/user-templates/administrator
-    - sed 's/Session=/Session=firstsetup/g' -i /usr/share/accountsservice/user-templates/standard
 
   - name: blackbox-rescue
     type: shell

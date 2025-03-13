@@ -34,7 +34,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
       - uses: vanilla-os/vib-gh-action@v0.8.1
         with:
           recipe: "recipe.yml"

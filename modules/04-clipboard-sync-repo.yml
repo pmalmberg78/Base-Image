@@ -1,5 +1,0 @@
-name: waydroid-modules
-type: shell
-commands:
-  - wget -P /etc/apt/sources.list.d/ https://raw.githubusercontent.com/dnut/deb/master/dnut.list
-  - sudo apt update && sudo apt upgrade -y
