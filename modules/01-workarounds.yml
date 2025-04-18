@@ -1,4 +1,4 @@
-name: install workaround packages
+name: install-workaround-packages
 type: shell
 commands:
 - apt install -y /etc/workarounds/blackbox-is-x-terminal-emulator/blackbox-is-x-terminal-emulator_1.0_all.deb
