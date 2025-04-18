@@ -1,5 +1,5 @@
 name: install workaround packages
 type: apt
-source:
-  packages:
-  - accountsservice
+sources:
+  - packages:
+    - accountsservice
