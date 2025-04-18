@@ -34,8 +34,8 @@ stages:
         checksum: 0e1d92d9c9154f9a115e97b40ff692afa52ddd0d9f770a8ec67440bf1a48aa72
     commands:
     - mkdir -p /usr/bin
-    - cp /sources/vanilla-tools/vanilla-tools/lpkg /usr/bin/lpkg
-    - cp /sources/vanilla-tools/vanilla-tools/cur-gpu /usr/bin/cur-gpu
+    - cp /sources/vanilla-tools/vanilla-tools/vanilla-tools/lpkg /usr/bin/lpkg
+    - cp /sources/vanilla-tools/vanilla-tools/vanilla-tools/cur-gpu /usr/bin/cur-gpu
     - chmod +x /usr/bin/lpkg
     - chmod +x /usr/bin/cur-gpu
 
