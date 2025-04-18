@@ -1,11 +1,11 @@
 name: vanilla-backgrounds
 type: dpkg-buildpackage
-sources:
-  - type: git
-    url: https://github.com/Vanilla-OS/vanilla-backgrounds.git
-    tag: v1.0.4
-    paths:
-    - vanilla-backgrounds
+source:
+  type: git
+  url: https://github.com/Vanilla-OS/vanilla-backgrounds.git
+  tag: v1.0.4
+  paths:
+  - vanilla-backgrounds
 modules:
 - name: vanilla-backgrounds-deps-install
   type: apt

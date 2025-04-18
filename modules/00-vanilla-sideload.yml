@@ -1,11 +1,11 @@
 name: vanilla-sideload
 type: dpkg-buildpackage
-sources:
-  - type: git
-    url: https://github.com/Vanilla-OS/sideload-utility
-    tag: v1.0.2
-    paths:
-      - vanilla-sideload
+source:
+  type: git
+  url: https://github.com/Vanilla-OS/sideload-utility
+  tag: v1.0.2
+  paths:
+    - vanilla-sideload
 modules:
 - name: sideload-utility-deps-install
   type: apt
