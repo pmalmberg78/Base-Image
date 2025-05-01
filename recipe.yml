@@ -5,7 +5,7 @@ vibversion: 1.0.1
 stages:
 - id: build
   base: ghcr.io/vanilla-os/core:main
-  singlelayer: false
+  addincludes: true
   labels:
     maintainer: Kanola Contributors
   args:
