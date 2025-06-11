@@ -20,9 +20,11 @@ stages:
     commands:
     - echo 'PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"' > /etc/environment
     - sed -i '4,10d' /etc/profile
+    - mv /usr/sbin/grub-mkconfig /usr/sbin/grub-mkconfig.bak
     - apt update
     - apt upgrade -y
     - apt clean
+    - mv /usr/sbin/grub-mkconfig.bak /usr/sbin/grub-mkconfig
     - apt-mark hold snapd gnome-software-plugin-snap
     - apt -y install squashfs-tools minisign
     - rm /usr/sbin/grub-mkconfig || true
