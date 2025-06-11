@@ -25,6 +25,7 @@ stages:
     - apt clean
     - apt-mark hold snapd gnome-software-plugin-snap
     - apt -y install squashfs-tools minisign
+    - rm /usr/sbin/grub-mkconfig || true
 
   - name: vanilla-tools
     type: shell
